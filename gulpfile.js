@@ -6,24 +6,14 @@ var gulp = require('gulp'),
             'gulp-live-server': 'serve'
         }
     });
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 
 // Start Watching: Run "gulp"
 gulp.task('default', ['watch']);
 
 // Run "gulp server"
-gulp.task('server', ['serve', 'watch']);
-
-// Minify jQuery Plugins: Run manually with: "gulp squish-jquery"
-gulp.task('squish-jquery', function () {
-    return gulp.src('assets/js/libs/**/*.js')
-        .pipe(plugins.uglify({
-            output: {
-                'ascii_only': true
-            }
-        }))
-        .pipe(plugins.concat('jquery.plugins.min.js'))
-        .pipe(gulp.dest('build'));
-});
+gulp.task('server', ['browser-sync', 'watch']);
 
 // Minify Custom JS: Run manually with: "gulp build-js"
 gulp.task('build-js', function () {
@@ -35,8 +25,7 @@ gulp.task('build-js', function () {
                 'ascii_only': true
             }
         }))
-        .pipe(plugins.concat('scripts.min.js'))
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('build/js'));
 });
 
 // Less to CSS: Run manually with: "gulp build-css"
@@ -63,14 +52,25 @@ gulp.task('build-css', function () {
             cascade: false
         }))
         .pipe(plugins.cssmin())
-        .pipe(gulp.dest('build')).on('error', gutil.log);
+        .pipe(gulp.dest('build/css')).on('error', gutil.log);
+});
+
+// 静态服务器
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./",
+            index: "index.html"
+        }
+    });
 });
 
 // Default task
 gulp.task('watch', function () {
-    gulp.watch('assets/js/libs/**/*.js', ['squish-jquery']);
-    gulp.watch('assets/js/*.js', ['build-js']);
-    gulp.watch('assets/less/**/*.less', ['build-css']);
+    gulp.watch('*.html').on('change', reload);
+    gulp.watch('templates/*.html').on('change', reload);
+    gulp.watch('assets/js/*.js', ['build-js']).on('change', reload);
+    gulp.watch('assets/less/**/*.less', ['build-css']).on('change', reload);
 });
 
 // Folder "/" serving at http://localhost:8888
