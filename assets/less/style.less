@@ -3,179 +3,177 @@
 @import "font";
 
 body {
-    min-width: 1024px;
-    font-size: @base-font-size;
-    background-color: @background-color;
+  min-width: 1024px;
+  font-size: @base-font-size;
+  background-color: @background-color;
 }
 
 .wrapper {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 header {
-    position: relative;
-    height: 534px;
-    background-image: url("../img/background.png");
-    background-size: 100%;
-    color: @whiteColor;
+  position: relative;
+  height: 534px;
+  background-image: url("../img/background.png");
+  background-size: 100%;
+  color: @whiteColor;
 
-    .nav-title {
-        .absolute-center;
-        font-family: 'Brush Script', serif;
-        font-size: 60px;
-    }
+  .nav-title {
+    .absolute-center;
+    font-family: 'Brush Script', serif;
+    font-size: 60px;
+  }
 }
 
 nav {
-    height: @nav-height;
-    line-height:@nav-height;
-    font-size: @base-font-size;
+  height: @nav-height;
+  line-height: @nav-height;
+  font-size: @base-font-size;
 
-    .wrapper {
-        .flex(row, flex-start, center);
+  .wrapper {
+    .flex(row, flex-start, center);
 
-        .nav-logo {
-            font-family: 'Brush Script', serif;
-            font-size: 36px;
-            color: @whiteColor;
-
-        }
-
-        .nav-item-group {
-            .flex(row, flex-start, center);
-
-            flex-grow: 1;
-            margin-left: 20px;
-
-            .nav-item {
-                width: 80px;
-                text-align: center;
-                color: @whiteColor;
-
-                &:hover {
-                    background: @primary-color;
-                }
-            }
-        }
-
-        .nav-button-group {
-            .flex(row, right, center);
-
-            flex-grow: 0;
-        }
+    .nav-logo {
+      font-family: 'Brush Script', serif;
+      font-size: 36px;
+      color: @whiteColor;
     }
+
+    .nav-item-group {
+      .flex(row, flex-start, center);
+      flex-grow: 1;
+      margin-left: 20px;
+
+      .nav-item {
+        width: 80px;
+        text-align: center;
+        color: @whiteColor;
+
+        &:hover {
+          background: @primary-color;
+        }
+      }
+    }
+
+    .nav-button-group {
+      .flex(row, right, center);
+      flex-grow: 0;
+    }
+  }
 }
 
 .container {
-    .flex(row, flex-start, flex-start);
-    margin-top: 30px;
-    width: inherit;
+  .flex(row, flex-start, flex-start);
+  margin-top: 30px;
+  width: inherit;
 
-    .ui.vertical.menu.nav-left {
-        flex-grow: 0;
-        flex-basis: 220px;
-        width: 220px;
-        margin-right: 40px;
-    }
+  .ui.vertical.menu.nav-left {
+    flex-grow: 0;
+    flex-basis: 220px;
+    width: 220px;
+    margin-right: 40px;
+  }
 
-    .page-content {
-        flex-grow: 1;
-        .flex(column, flex-start, stretch);
-        width: @content-width;
-    }
+  .page-content {
+    flex-grow: 1;
+    .flex(column, flex-start, stretch);
+    width: @content-width;
+  }
 }
 
 .segment {
-    .flex(column, flex-start, stretch);
+  .flex(column, flex-start, stretch);
 }
 
 .segment-title {
-    .flex(row, flex-start, center);
+  .flex(row, flex-start, center);
 
-    .title-rect {
-        height: 40px;
-        width: 10px;
-        margin-right: 12px;
-        background: @primary-color;
-    }
+  .title-rect {
+    height: 40px;
+    width: 10px;
+    margin-right: 12px;
+    background: @primary-color;
+  }
 
-    h2.title {
-        font-size: 20px;
-        margin-top: 0;
-    }
+  h2.title {
+    font-size: 20px;
+    margin-top: 0;
+  }
 }
 
 .search-input {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .course-card-group {
-    .flex(row, flex-start, flex-start);
-    margin-top: 30px;
-    flex-wrap: wrap;
+  .flex(row, flex-start, flex-start);
+  margin-top: 30px;
+  flex-wrap: wrap;
 
-    .course-card {
-        position: relative;
-        width: (@content-width - 40px) / 3;
-        margin-top: 0;
-        margin-right: 20px;
+  .course-card {
+    position: relative;
+    width: (@content-width - 40px) / 3;
+    margin-top: 0;
+    margin-right: 20px;
 
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
-
-        .price {
-            margin-top: 20px;
-            text-align: right;
-            font-weight: bold;
-            color: @primary-color;
-        }
+    &:nth-child(3n) {
+      margin-right: 0;
     }
+
+    .price {
+      margin-top: 20px;
+      text-align: right;
+      font-weight: bold;
+      color: @primary-color;
+    }
+  }
 }
 
+
+
 .info-form {
-
-    .ui.inline.field{
-
-        &>label {
-            width: 64px;
-            margin-right: 40px;
-            font-size: 16px;
-            font-weight: normal;
-            text-align: right;
-        }
-
-        &>input, &>textarea {
-            width: 360px;
-        }
-
-        .image-input {
-            width: 360px;
-        }
+  .ui.inline.field {
+    & > label {
+      width: 64px;
+      margin-right: 40px;
+      font-size: 16px;
+      font-weight: normal;
+      text-align: right;
     }
+
+    & > input,
+    & > textarea {
+      width: 360px;
+    }
+
+    .image-input {
+      width: 360px;
+    }
+  }
 }
 
 .ui.items.vertical-list {
-    .item {
-        img {
-            width: 84px;
-            height: 84px;
-            margin-right: 17px;
-        }
-        .item-title {
-            h3 {
-                display: inline-block;
-            }
-            .label {
-
-            }
-        }
+  .item {
+    img {
+      width: 84px;
+      height: 84px;
+      margin-right: 17px;
     }
+
+    .item-title {
+      h3 {
+        display: inline-block;
+      }
+
+      .label {}
+    }
+  }
 }
 
 footer {
-    height: 50px;
-    margin-top: 40px;
-    background: @secondary-color;
+  height: 50px;
+  margin-top: 40px;
+  background: @secondary-color;
 }
