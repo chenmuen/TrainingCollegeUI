@@ -1,3 +1,9 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@activeItemBackground: @secondaryColor;
+@activeItemTextColor: @white;
+@activeHoverItemBackground: @secondaryColor;
+@activeHoverItemColor: @white;
+
+

@@ -425,8 +425,8 @@
 ---------------*/
 
 .ui.menu .active.item {
-  background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background: #878D9F;
+  color: #FFFFFF;
   font-weight: normal;
   box-shadow: none;
 }
@@ -440,8 +440,8 @@
 
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background-color: #878D9F;
+  color: #FFFFFF;
 }
 
 /*--------------
@@ -575,7 +575,7 @@ Floated Menu / Item
 
 /* Vertical Active */
 .ui.vertical.menu .active.item {
-  background: rgba(0, 0, 0, 0.05);
+  background: #878D9F;
   border-radius: 0em;
   box-shadow: none;
 }
@@ -594,7 +594,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #FFFFFF;
 }
 
 /*--------------
