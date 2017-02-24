@@ -15,7 +15,7 @@ gulp.task('default', ['build', 'browser-sync', 'watch']);
 // Run "gulp server"
 gulp.task('server', ['browser-sync', 'watch']);
 
-gulp.task('build', ['build-js', 'build-css', 'build-img', 'build-font']);
+gulp.task('build', ['build-js', 'build-css', 'build-img', 'build-font', 'build-semantic']);
 
 // Minify Custom JS: Run manually with: "gulp build-js"
 gulp.task('build-js', function() {
@@ -65,6 +65,11 @@ gulp.task('build-img', function() {
 gulp.task('build-font', function() {
   return gulp.src('assets/font/*')
     .pipe(gulp.dest('build/font')).on('error', gutil.log);
+})
+
+gulp.task('build-semantic', function() {
+  return gulp.src('semantic/build/**/*')
+    .pipe(gulp.dest('build/semantic')).on('error', gutil.log);
 })
 
 // 静态服务器

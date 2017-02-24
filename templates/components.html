@@ -1,238 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Component</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../semantic/build/semantic.css">
-    <link rel="stylesheet" href="../build/css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Component</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../build/semantic/semantic.min.css">
+  <link rel="stylesheet" href="../build/css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="wrapper">
-                <a class="nav-logo" href="#">TrainingCollege</a>
-                <div class="nav-item-group">
-                    <a class="nav-item" href="#">课程</a>
-                    <a class="nav-item" href="#">个人</a>
-                    <a class="nav-item" href="#">机构</a>
-                </div>
-                <div class="nav-button-group">
-                </div>
-            </div>
-        </nav>
-        <div class="nav-title">Day Day up</div>
-    </header>
-    <div class="wrapper">
-        <div class="container">
-            <div class="ui vertical menu nav-left">
-                <a class="active item">全部课程</a>
-                <a class="item">我的课程</a>
-                <a class="item">已完成课程</a>
-            </div>
-            <div class="page-content">
-                <div class="segment">
-                    <div class="segment-title">
-                        <div class="title-rect"></div>
-                        <h2 class="title">课程列表</h2>
-                    </div>
-                    <div class="ui action input search-input">
-                        <input type="text" placeholder="Search...">
-                        <button class="ui icon button primary">
+  <header>
+    <nav>
+      <div class="wrapper">
+        <a class="nav-logo" href="#">TrainingCollege</a>
+        <div class="nav-item-group">
+          <a class="nav-item" href="#">课程</a>
+          <a class="nav-item" href="#">个人</a>
+          <a class="nav-item" href="#">机构</a>
+        </div>
+        <div class="nav-button-group">
+        </div>
+      </div>
+    </nav>
+    <div class="nav-title">Day Day up</div>
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <div class="ui vertical menu nav-left">
+        <a class="active item">全部课程</a>
+        <a class="item">我的课程</a>
+        <a class="item">已完成课程</a>
+      </div>
+      <div class="page-content">
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">课程列表</h2>
+          </div>
+          <div class="ui action input search-input">
+            <input type="text" placeholder="Search...">
+            <button class="ui icon button primary">
                             <i class="search icon"></i>
                         </button>
-                    </div>
-                    <div class="card-group course-card-group">
-                        <div class="ui card course-card">
-                            <div class="image">
-                                <img src="../build/img/course3.png">
-                            </div>
-                            <div class="content">
-                                <a class="header">演员的自我修养</a>
-                                <div class="meta">
-                                    <span class="date">开始于 2013-10-10</span>
-                                </div>
-                                <div class="meta">尹天仇</div>
-                                <div class="price">¥360</div>
-                            </div>
-                        </div>
-                        <div class="ui card course-card">
-                            <div class="image">
-                                <img src="../build/img/course1.png">
-                            </div>
-                            <div class="content">
-                                <a class="header">演员的自我修养</a>
-                                <div class="meta">
-                                    <span class="date">开始于 2013-10-10</span>
-                                </div>
-                                <div class="meta">尹天仇</div>
-                                <div class="price">¥360</div>
-                            </div>
-                        </div>
-                        <div class="ui card course-card">
-                            <div class="image">
-                                <img src="../build/img/course2.png">
-                            </div>
-                            <div class="content">
-                                <a class="header">演员的自我修养</a>
-                                <div class="meta">
-                                    <span class="date">开始于 2013-10-10</span>
-                                </div>
-                                <div class="meta">尹天仇</div>
-                                <div class="price">¥360</div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="card-group course-card-group">
+            <div class="ui card course-card">
+              <div class="image">
+                <img src="../build/img/course3.png">
+              </div>
+              <div class="content">
+                <a class="header">演员的自我修养</a>
+                <div class="meta">
+                  <span class="date">开始于 2013-10-10</span>
                 </div>
-
-                <div class="segment">
-                    <div class="segment-title">
-                        <div class="title-rect"></div>
-                        <h2 class="title">课程概要</h2>
-                    </div>
-                    <div class="course-brief">
-                        <img src="../build/img/course1.png" alt="课程图片">
-                        <div class="course-brief-group">
-                            <p class="course-brief-text">
-                                <span class="name">课程名</span>
-                                <span class="value">演员的自我修养</span>
-                            </p>
-                            <p class="course-brief-text">
-                                <span class="name">课程时间</span>
-                                <span class="value">2016-10-10 - 2016-12-12</span>
-                            </p>
-                            <p class="course-brief-text">
-                                <span class="name">课程教师</span>
-                                <span class="value">尹天仇</span>
-                            </p>
-                            <div>
-                                <button class="ui button primary">购买</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="segment">
-                    <div class="segment-title">
-                        <div class="title-rect"></div>
-                        <h2 class="title">课程介绍</h2>
-                    </div>
-                    <text>《演员自我修养》是斯坦尼斯拉夫斯基（俄国演员，导演，戏剧教育家、理论家）的最为知名的代表作，是斯坦尼斯拉夫斯基表演体系的精华，在世界范围内产生了极大的影响[1]  。 在周星驰经典电影《喜剧之王》中是用来表现主角精神追求的重要道具。</text>
-                </div>
-
-                <div class="segment">
-                    <div class="segment-title">
-                        <div class="title-rect"></div>
-                        <h2 class="title">当前学员</h2>
-                    </div>
-                    <div class="ui relaxed divided list member-list">
-                        <div class="item member-item">
-                            <!--<img src="" alt="" class="avatar">-->
-                            <i class="circular inverted big user middle aligned icon"></i>
-                            <div class="content middle aligned">
-                                <a class="header">托尼·斯塔克</a>
-                                <div class="description">于 2016-10-12 加入</div>
-                            </div>
-                        </div>
-                        <div class="item member-item">
-                            <!--<img src="" alt="" class="avatar">-->
-                            <i class="circular inverted big user middle aligned icon"></i>
-                            <div class="content middle aligned">
-                                <a class="header">托尼·斯塔克</a>
-                                <div class="description">于 2016-10-12 加入</div>
-                            </div>
-                        </div>
-                        <div class="item member-item">
-                            <!--<img src="" alt="" class="avatar">-->
-                            <i class="circular inverted big user middle aligned icon"></i>
-                            <div class="content middle aligned">
-                                <a class="header">托尼·斯塔克</a>
-                                <div class="description">于 2016-10-12 加入</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="segment">
-                    <div class="segment-title">
-                        <div class="title-rect"></div>
-                        <h2 class="title">新增课程</h2>
-                    </div>
-                    <form class="ui form info-form" action="#">
-                        <div class="ui inline field">
-                            <label class="info-label">课程名</label>
-                            <input type="text" placeholder="课程名">
-                        </div>
-                        <div class="ui inline field">
-                            <label>课程图片</label>
-                            <img class="ui small image aligned top image-input" src="../build/img/course1.png">
-                        </div>
-                        <div class="ui inline field">
-                            <label>开始时间</label>
-                            <input type="date" name="dateExpire" placeholder="dd/mm/yyyy" value={{dateExpire}}>
-                        </div>
-                        <div class="ui inline field">
-                            <label>课程简介</label>
-                            <textarea></textarea>
-                        </div>
-                        <div class="ui inline field">
-                            <label></label>
-                            <button class="ui button primary">确认</button>
-                            <button class="ui button">取消</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="segment">
-                    <div class="segment-title">
-                        <div class="title-rect"></div>
-                        <h2 class="title">课程列表</h2>
-                    </div>
-                    <div class="ui divided items vertical-list">
-                        <div class="item">
-                            <img src="../build/img/course1.png"/>
-                            <div class="content">
-                                <div class="item-title">
-                                    <h3>演员的自我修养</h3>
-                                    <div class="ui label horizontal">未审批</div>
-                                </div>
-                                <div class="meta">尹天仇</div>
-                                <div class="meta">
-                                    <span class="date">开始于 2013-10-10</span>
-                                </div>
-                            </div>
-                            <div class="button-group">
-                                <button class="ui button">退订</button>
-                                <button class="ui button primary">详情</button>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="../build/img/course1.png"/>
-                            </div>
-                            <div class="content">
-                                <h3>演员的自我修养</h3>
-                                <div class="meta">
-                                    <span class="date">开始于 2013-10-10</span>
-                                </div>
-                                <div class="meta">尹天仇</div>
-                            </div>
-                            <div class="button-group">
-                                <button class="ui button">退订</button>
-                                <button class="ui button primary">详情</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="meta">尹天仇</div>
+                <div class="price">¥360</div>
+              </div>
             </div>
+            <div class="ui card course-card">
+              <div class="image">
+                <img src="../build/img/course1.png">
+              </div>
+              <div class="content">
+                <a class="header">演员的自我修养</a>
+                <div class="meta">
+                  <span class="date">开始于 2013-10-10</span>
+                </div>
+                <div class="meta">尹天仇</div>
+                <div class="price">¥360</div>
+              </div>
+            </div>
+            <div class="ui card course-card">
+              <div class="image">
+                <img src="../build/img/course2.png">
+              </div>
+              <div class="content">
+                <a class="header">演员的自我修养</a>
+                <div class="meta">
+                  <span class="date">开始于 2013-10-10</span>
+                </div>
+                <div class="meta">尹天仇</div>
+                <div class="price">¥360</div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">课程概要</h2>
+          </div>
+          <div class="course-brief">
+            <img src="../build/img/course1.png" alt="课程图片">
+            <div class="course-brief-group">
+              <p class="course-brief-text">
+                <span class="name">课程名</span>
+                <span class="value">演员的自我修养</span>
+              </p>
+              <p class="course-brief-text">
+                <span class="name">课程时间</span>
+                <span class="value">2016-10-10 - 2016-12-12</span>
+              </p>
+              <p class="course-brief-text">
+                <span class="name">课程教师</span>
+                <span class="value">尹天仇</span>
+              </p>
+              <div>
+                <button class="ui button primary">购买</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">课程介绍</h2>
+          </div>
+          <text>《演员自我修养》是斯坦尼斯拉夫斯基（俄国演员，导演，戏剧教育家、理论家）的最为知名的代表作，是斯坦尼斯拉夫斯基表演体系的精华，在世界范围内产生了极大的影响[1]  。 在周星驰经典电影《喜剧之王》中是用来表现主角精神追求的重要道具。</text>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">当前学员</h2>
+          </div>
+          <div class="ui relaxed divided list member-list">
+            <div class="item member-item">
+              <!--<img src="" alt="" class="avatar">-->
+              <i class="circular inverted big user middle aligned icon"></i>
+              <div class="content middle aligned">
+                <a class="header">托尼·斯塔克</a>
+                <div class="description">于 2016-10-12 加入</div>
+              </div>
+            </div>
+            <div class="item member-item">
+              <!--<img src="" alt="" class="avatar">-->
+              <i class="circular inverted big user middle aligned icon"></i>
+              <div class="content middle aligned">
+                <a class="header">托尼·斯塔克</a>
+                <div class="description">于 2016-10-12 加入</div>
+              </div>
+            </div>
+            <div class="item member-item">
+              <!--<img src="" alt="" class="avatar">-->
+              <i class="circular inverted big user middle aligned icon"></i>
+              <div class="content middle aligned">
+                <a class="header">托尼·斯塔克</a>
+                <div class="description">于 2016-10-12 加入</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">新增课程</h2>
+          </div>
+          <form class="ui form info-form" action="#">
+            <div class="ui inline field">
+              <label class="info-label">课程名</label>
+              <input type="text" placeholder="课程名">
+            </div>
+            <div class="ui inline field">
+              <label>课程图片</label>
+              <img class="ui small image aligned top image-input" src="../build/img/course1.png">
+            </div>
+            <div class="ui inline field">
+              <label>开始时间</label>
+              <input type="date" name="dateExpire" placeholder="dd/mm/yyyy" value={{dateExpire}}>
+            </div>
+            <div class="ui inline field">
+              <label>课程简介</label>
+              <textarea></textarea>
+            </div>
+            <div class="ui inline field">
+              <label></label>
+              <button class="ui button primary">确认</button>
+              <button class="ui button">取消</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">个人信息</h2>
+          </div>
+          <div class="info-list">
+            <div class="info-item">
+              <p class="name">用户ID</p>
+              <p class="value">S0000001</p>
+            </div>
+            <div class="info-item">
+              <p class="name">学员姓名</p>
+              <p class="value">托尼·斯塔克</p>
+            </div>
+            <div class="info-item">
+              <p class="name">银行账户</p>
+              <p class="value">00000000000010</p>
+            </div>
+            <div class="info-item">
+              <p class="name">学员等级</p>
+              <p class="value">2</p>
+            </div>
+            <div class="info-item">
+              <p class="name">学员积分</p>
+              <p class="value">1000</p>
+            </div>
+            <div class="info-item">
+              <div class="name"></div>
+              <button class="ui button primary">修改信息</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">课程列表</h2>
+          </div>
+          <div class="ui divided items vertical-list">
+            <div class="item">
+              <img src="../build/img/course1.png" />
+              <div class="content">
+                <div class="item-title">
+                  <h3>演员的自我修养</h3>
+                  <div class="ui label horizontal">未审批</div>
+                </div>
+                <div class="meta">尹天仇</div>
+                <div class="meta">
+                  <span class="date">开始于 2013-10-10</span>
+                </div>
+              </div>
+              <div class="button-group">
+                <button class="ui button">退订</button>
+                <button class="ui button primary">详情</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">会员充值</h2>
+          </div>
+          <form class="ui form info-form" action="#">
+            <div class="ui inline field radio-field">
+              <label class="info-label">充值方式</label>
+              <div class="ui radio checkbox">
+                <input type="radio" name="type" checked="checked">
+                <label>会员卡充值</label>
+              </div>
+              <div class="ui radio checkbox">
+                <input type="radio" name="type">
+                <label>现金充值</label>
+              </div>
+            </div>
+            <div class="ui inline field">
+              <label class="info-label">充值金额</label>
+              <input type="text" placeholder="充值金额">
+            </div>
+            <div class="ui inline field">
+              <label></label>
+              <button class="ui button primary">确认</button>
+              <button class="ui button">取消</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <footer></footer>
+  <footer></footer>
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/semantic/build/semantic.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/build/semantic/semantic.min.js"></script>
 </body>
+
 </html>
