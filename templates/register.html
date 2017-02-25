@@ -58,7 +58,7 @@
         <div class="form-title">注册</div>
         <div id="first-divider" class="ui divider"></div>
         <div class="field">
-          <label for="username">用户名</label>
+          <label for="username">名称</label>
           <input id="username" class="ui input" type="text" placeholder="用户名">
         </div>
         <div class="field">
@@ -66,13 +66,21 @@
           <input id="password" class="ui input" type="password" placeholder="密码">
         </div>
         <div class="field">
-          <label for="password">确认密码</label>
-          <input id="password" class="ui input" type="password" placeholder="密码">
+          <label for="password-confirm">确认密码</label>
+          <input id="password-confirm" class="ui input" type="password" placeholder="确认密码">
+        </div>
+        <div class="field">
+          <label for="type">类型</label>
+          <select id="type" class="ui dropdown">
+            <option value="0">学生</option>
+            <option value="1">机构</option>
+            <option value="2">经理</option>
+          </select>
         </div>
         <div id="last-divider" class="ui divider"></div>
         <div class="field button-field">
-          <button class="ui button primary big" name="button">注册</button>
-          <button class="ui button big" name="button">取消</button>
+          <button class="ui button primary large" name="button">注册</button>
+          <button class="ui button large" name="button">取消</button>
         </div>
       </form>
     </div>
@@ -80,7 +88,9 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/build/semantic/semantic.min.js"></script>
-
+  <script type="text/javascript">
+    $('.ui.dropdown').dropdown();
+  </script>
 
 </body>
 
