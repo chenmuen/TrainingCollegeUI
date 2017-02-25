@@ -4,6 +4,7 @@
 
 body {
   min-width: 1024px;
+  height: 100%;
   font-size: @base-font-size;
   background-color: @background-color;
 }
@@ -12,9 +13,89 @@ a {
   color: @primary-color;
 }
 
+button {
+  border: none !important;
+
+  &.normal {
+    width: 100px !important;
+  }
+
+  &.big {
+    width: 120px !important;
+  }
+}
+
 .wrapper {
   width: 960px;
   margin: 0 auto;
+}
+
+.login-page {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background.png");
+  background-size: 100%;
+  color: @whiteColor;
+
+  .login-container {
+    .absolute-center();
+    .flex(column, flex-start, stretch);
+    width: 375px;
+
+    .divider {
+      margin: 26px 0;
+      background: @whiteColor;
+    }
+    #first-divider {
+      margin-bottom: 32px;
+    }
+    #last-divider {
+      margin-top: 2px;
+    }
+
+    .login-logo {
+      font-size: 60px;
+      font-family: 'Brush Script', serif;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .ui.form.login-form {
+      .flex(column, flex-start, stretch);
+      text-align: center;
+
+      .form-title {
+        font-size: 24px;
+      }
+
+      .field {
+        .flex(row, flex-start, center);
+        padding: 0 10px;
+        margin-bottom: 30px;
+
+        label {
+          width: 90px;
+          margin-right: 10px;
+          font-size: 16px;
+          font-weight: normal;
+          color: @whiteColor;
+          text-align: right;
+        }
+      }
+
+      .button-field {
+        .flex(row, center, center);
+
+        button:first-child {
+          margin-right: 30px;
+        }
+      }
+
+    }
+  }
+
+
+
 }
 
 header {
@@ -164,21 +245,27 @@ nav {
   text-indent: 2em;
 }
 
-.member-list {
+.list.member-list {
   margin-top: 0 !important;
 
-  .member-item {
+  .item.member-item {
+    .flex(row, flex-start, center);
+
     i.inverted.circular.icon.avatar {
-      margin-right: 10px !important;
       font-size: 36px;
       background-color: @secondary-color !important;
     }
-
     .content {
+      flex-grow: 1;
       padding-left: 20px !important;
     }
     a.header {
       margin-bottom: 10px !important;
+    }
+    .score {
+      font-size: 1.25em;
+      font-weight: bold;
+      color: @primary-color;
     }
   }
 }

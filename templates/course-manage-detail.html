@@ -58,7 +58,7 @@
         <div class="nav-item-group">
           <a class="nav-item" href="#">课程</a>
           <a class="nav-item" href="#">个人</a>
-          <a class="nav-item" href="#">机构</a>
+          <a class="nav-item" href="#">统计</a>
         </div>
         <div class="nav-button-group">
         </div>
@@ -69,65 +69,80 @@
   <div class="wrapper">
     <div class="container">
       <div class="ui vertical menu nav-left">
-        <a class="active item">个人信息</a>
+        <a class="active item">全部课程</a>
         <a class="item">我的课程</a>
-        <a class="item">充值</a>
+        <a class="item">已完成课程</a>
       </div>
       <div class="page-content">
         <div class="segment">
           <div class="segment-title">
             <div class="title-rect"></div>
-            <h2 class="title">编辑个人信息</h2>
+            <h2 class="title">课程概要</h2>
           </div>
-          <form class="ui form info-form" action="#">
-            <div class="ui inline field disabled">
-              <label class="info-label">用户ID</label>
-              <input class='disabled' type="text" placeholder="S0000001">
+          <div class="course-brief">
+            <img class="course-img" src="../build/img/course1.png" alt="课程图片">
+            <div class="course-brief-group">
+              <div class="course-brief-text">
+                <p class="name">课程名</p>
+                <p class="value">演员的自我修养</p>
+              </div>
+              <div class="course-brief-text">
+                <p class="name">课程时间</p>
+                <p class="value">2016-10-10 - 2016-12-12</p>
+              </div>
+              <div class="course-brief-text">
+                <p class="name">课程教师</p>
+                <p class="value">尹天仇</p>
+              </div>
+              <div class="button-group">
+                <button class="ui button primary">修改</button>
+              </div>
             </div>
-            <div class="ui inline field">
-              <label>用户头像</label>
-              <img class="ui small image aligned top image-input" src="../build/img/course1.png">
-            </div>
-            <div class="ui inline field">
-              <label class="info-label">姓名</label>
-              <input type="text" placeholder="姓名">
-            </div>
-            <div class="ui inline field">
-              <label class="info-label">银行账户</label>
-              <input type="text" placeholder="银行账户">
-            </div>
-            <div class="ui inline field">
-              <label></label>
-              <button class="ui button primary">确认</button>
-              <button class="ui button">取消</button>
-            </div>
-          </form>
+          </div>
         </div>
 
         <div class="segment">
           <div class="segment-title">
             <div class="title-rect"></div>
-            <h2 class="title">修改密码</h2>
+            <h2 class="title">课程介绍</h2>
           </div>
-          <form class="ui form info-form" action="#">
-            <div class="ui inline field disabled">
-              <label class="info-label">原密码</label>
-              <input class='disabled' type="password" placeholder="原密码">
+          <text class="course-intro">《演员自我修养》是斯坦尼斯拉夫斯基（俄国演员，导演，戏剧教育家、理论家）的最为知名的代表作，是斯坦尼斯拉夫斯基表演体系的精华，在世界范围内产生了极大的影响[1]  。 在周星驰经典电影《喜剧之王》中是用来表现主角精神追求的重要道具。</text>
+        </div>
+
+        <div class="segment">
+          <div class="segment-title">
+            <div class="title-rect"></div>
+            <h2 class="title">当前学员</h2>
+          </div>
+          <div class="ui relaxed divided list member-list">
+            <div class="item member-item">
+              <!--<img src="" alt="" class="avatar">-->
+              <i class="circular inverted large user middle aligned icon avatar"></i>
+              <div class="content middle aligned">
+                <a class="header">托尼·斯塔克</a>
+                <div class="description">于 2016-10-12 加入</div>
+              </div>
+              <button class="ui button">登记成绩</button>
             </div>
-            <div class="ui inline field">
-              <label class="info-label">新密码</label>
-              <input type="text" placeholder="新密码">
+            <div class="item member-item">
+              <!--<img src="" alt="" class="avatar">-->
+              <i class="circular inverted large user middle aligned icon avatar"></i>
+              <div class="content middle aligned">
+                <a class="header">托尼·斯塔克</a>
+                <div class="description">于 2016-10-12 加入</div>
+              </div>
+              <p class="score">96 分</p>
             </div>
-            <div class="ui inline field">
-              <label class="info-label">确认密码</label>
-              <input type="text" placeholder="确认新密码">
+            <div class="item member-item">
+              <!--<img src="" alt="" class="avatar">-->
+              <i class="circular inverted large user icon avatar"></i>
+              <div class="content">
+                <a class="header">托尼·斯塔克</a>
+                <div class="description">于 2016-10-12 加入</div>
+              </div>
+              <button class="ui button">登记成绩</button>
             </div>
-            <div class="ui inline field">
-              <label></label>
-              <button class="ui button primary">确认</button>
-              <button class="ui button">取消</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
